@@ -16,3 +16,13 @@ cat text.txt | sed  '/<regx string>/s/$/<string need to insert>/'
 # * insert/ modify at End of file
 ```
 sed  -i '/<regx string>/s/$/<string need to insert>/' text.txt
+```
+# Delete line with matching string 
+ # * Read only
+ ```
+cat text.txt |sed  '</regx string>/d'
+```
+# * Insert / Modify
+```
+sed -i '/<regx string>/d' text.txt
+```
