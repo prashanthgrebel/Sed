@@ -1,7 +1,7 @@
 # Sed
 
-# insert string / charecter
- # * Read at beging of file
+# insert string / charecter specific line with matching string
+ # * Read at beging of file 
 ```
 cat text.txt | sed  '/<regx string>/s/^/<string need to insert>/'    
 ```
