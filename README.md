@@ -26,12 +26,13 @@ cat text.txt |sed  '</regx string>/d'
 ```
 sed -i '/<regx string>/d' text.txt
 ```
+# Delete a word after macthing beginning of a word in the line 
 
-# * Read only - Delete a word after macthing beginning of a word in the line 
+# * Read only 
 ```
  cat file.txt | sed '/^\<begining  word >/s/<word to replace or delete>//'
 ```
-# * Modify / write - Delete a word after macthing beginning of a word in the line 
+# * Modify / write  
 
 ```
  sed -i '/^\<begining  word >/s/<word to replace or delete>//' file.txt
